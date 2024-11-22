@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="bg" href="background.png">
+    <style>
+        body {
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+            z-index: 0;
+            position: relative;
+            background-color: #2e2e2e;
+            width: 750px;
+            height: 925px;
+            border-radius: 100px;
+            display: flex;
+            border: 5px;
+            border-style: solid;
+            border-color: #2e2e2e;
+        }
+
+        .header1 {
+            z-index: 2;
+            position: absolute;
+            background-color: #4d4d4d;
+            width: 750px;
+            height: 200px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header2 {
+            z-index: 1;
+            position: absolute;
+            background-color: #222222;
+            width: 750px;
+            height: 300px;
+            border-radius: 100px;
+        }
+
+        .header3 {
+            position: absolute;
+            background-color: #4d4d4d;
+            width: 750px;
+            height: 200px;
+            border-radius: 100px;
+            align-self: flex-end;
+            text-align: center;
+        }
+
+        .moonless {
+            width: 175px;
+            border-radius: 100%;
+            margin-left: 19px;
+        }
+        .icon {
+            width: 175px;
+            border-radius: 100%;
+            margin-left: 100px;
+        }
+        .H1text {
+            margin-left: 95px;
+            font-weight: bold;
+            color: white;
+            font-size: xx-large;
+        }
+
+        .H2text {
+            margin-top: 230px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: x-large;
+        }
+
+        .app {
+            color: white;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: slateblue;
+            font-size: larger;
+        }
+
+        .header3-cut {
+            background-color: #2e2e2e;
+            width: 750px;
+            height: 100px;
+        }
+
+        .comandos {
+            z-index: 3;
+            margin-left: 35px;
+            color: white;
+            font-size: larger;
+        }
+
+        .comandosBox {
+            font-size: x-large;
+            padding: 10px;
+            width: 100px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: black;
+            text-align: center;
+        }
+
+        .comandosBox1 {
+            font-size: x-large;
+            padding: 10px;
+            width: 100px;
+            margin-top: 350px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: black;
+            text-align: center;
+        }
+
+        .textBox1 {
+            margin-top: 350px;
+        }
+
+        .text {
+            border-radius: 30px;
+            margin-top: 40px;
+            padding-left: 25px;
+            padding-right: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #4d4d4d;
+        }
+
+        .text1 {
+            border-radius: 30px;
+            margin-top: 380px;
+            padding-left: 25px;
+            padding-right: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #4d4d4d;
+        }
+        .res {
+            font-weight: bold;
+            color: black;
+            font-size: xx-large;
+        }
+        select {
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .selectBox {
+            background-color: #222222;
+            padding: 20px;
+            margin-left: 55px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="main">
+        <div class="header1">
+            <img class="moonless" src="1moonless.png" alt="moonless">
+            <p class="H1text">Moonless</p>
+
+            <div>
+                <p class="app">App</p>
+            </div>
+
+            <img class="icon" src="1icon.gif" alt="icon">
+        </div>
+
+        <div class="comandos">
+            <div class="text1">
+                <p class="comandosBox">m.acordar:</p> <p class="textBox">Menciona um membro aleatório que possuí o cargo @Revivedor.</p>
+            </div>
+
+            <div class="text">
+                <p class="comandosBox">m.repetir:</p> <p class="textBox">Repete o que você diz.</p> 
+            </div>
+
+            <div class="text">
+                <p class="comandosBox">m.role:</p> <p class="textBox">Adiciona um dos seguintes cargos a um usuário.</p> 
+                <div class="selectBox">
+                    <select>
+                        <option value=“1” selected=“selected”">invisivel</option>
+                        <option value=“2”>gartic_mod</option>
+                        <option value=“3”>parceiros</option>
+                        <option value=“4”>artista</option>
+                        <option value=“5”>passe_cores</option>
+                        <option value=“6”>passe_cassino</option>
+                        <option value=“7”>efeitos_sonoros</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header2">
+            <p class="H2text">Veja meus comandos:</p>
+        </div>
+
+        <div class="header3">
+            <div class="header3-cut"></div>
+            <p class="res">Servidor do Resfriado®</p>
+        </div>
+    </div>
+</body>
+
+</html>
