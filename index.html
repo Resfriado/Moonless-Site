@@ -9,6 +9,7 @@
     <link rel="bg" href="background.png">
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             background-image: url('background.png');
             background-repeat: no-repeat;
             background-size: cover;
@@ -70,7 +71,7 @@
             margin-left: 100px;
         }
         .H1text {
-            margin-left: 95px;
+            margin-left: 90px;
             font-weight: bold;
             color: white;
             font-size: xx-large;
@@ -93,6 +94,7 @@
         }
 
         .header3-cut {
+            pointer-events: none;
             background-color: #2e2e2e;
             width: 750px;
             height: 100px;
@@ -100,30 +102,21 @@
 
         .comandos {
             z-index: 3;
-            margin-left: 35px;
+            margin-left: 10px;
             color: white;
             font-size: larger;
         }
 
         .comandosBox {
+            min-width: 120px;
             font-size: x-large;
             padding: 10px;
-            width: 100px;
-            margin-right: 10px;
+            margin-right: 15px;
             border-radius: 10px;
             background-color: black;
-            text-align: center;
-        }
-
-        .comandosBox1 {
-            font-size: x-large;
-            padding: 10px;
-            width: 100px;
-            margin-top: 350px;
-            margin-right: 10px;
-            border-radius: 10px;
-            background-color: black;
-            text-align: center;
+            justify-content: center;
+            display: flex;
+            justify-content: center;
         }
 
         .textBox1 {
@@ -151,11 +144,21 @@
             align-items: center;
             background-color: #4d4d4d;
         }
-        .res {
+        a.res {
+            z-index: 10;
+            position: relative;
             font-weight: bold;
             color: black;
             font-size: xx-large;
+            display: flex;
+            justify-self: center;
+            margin-top: 30px;
         }
+
+        a.res:hover {
+            color: deepskyblue;
+        }
+
         select {
             padding: 5px;
             border-radius: 10px;
@@ -163,7 +166,7 @@
         .selectBox {
             background-color: #222222;
             padding: 20px;
-            margin-left: 55px;
+            margin-left: 10px;
             border-radius: 100px;
         }
     </style>
@@ -216,7 +219,7 @@
 
         <div class="header3">
             <div class="header3-cut"></div>
-            <p class="res">Servidor do Resfriado®</p>
+            <a class="res" href="https://discord.gg/resfriado">Servidor do Resfriado®</a>
         </div>
     </div>
 </body>
